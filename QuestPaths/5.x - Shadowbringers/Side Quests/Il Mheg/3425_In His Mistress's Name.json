@@ -1,0 +1,54 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "Clockwise Starr",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1027656,
+          "Position": {
+            "X": -291.61517,
+            "Y": 40.324036,
+            "Z": 456.65674
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest"
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "DataId": 1027693,
+          "Position": {
+            "X": 364.27856,
+            "Y": 87.001114,
+            "Z": -715.41925
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "AetheryteShortcut": "Il Mheg - Wolekdorf"
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1027656,
+          "Position": {
+            "X": -291.61517,
+            "Y": 40.324036,
+            "Z": 456.65674
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest",
+          "AetheryteShortcut": "Il Mheg - Lydha Lran",
+          "Fly": true
+        }
+      ]
+    }
+  ]
+}

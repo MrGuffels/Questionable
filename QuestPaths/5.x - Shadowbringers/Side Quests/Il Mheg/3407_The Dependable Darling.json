@@ -1,0 +1,93 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "Clockwise Starr",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1030838,
+          "Position": {
+            "X": -285.90833,
+            "Y": 40.324036,
+            "Z": 444.41882
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest",
+          "DialogueChoices": [
+            {
+              "Type": "List",
+              "Prompt": "TEXT_LUCKZC104_03407_Q1_000_000",
+              "Answer": "TEXT_LUCKZC104_03407_A1_000_000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "DataId": 1030721,
+          "Position": {
+            "X": -626.2455,
+            "Y": 52.029984,
+            "Z": 368.73413
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 2,
+      "Steps": [
+        {
+          "Position": {
+            "X": -909.4109,
+            "Y": 35.300686,
+            "Z": 300.0915
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Combat",
+          "EnemySpawnType": "AutoOnEnterArea",
+          "KillEnemyDataIds": [11109],
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 3,
+      "Steps": [
+        {
+          "DataId": 1030846,
+          "Position": {
+            "X": -910.94836,
+            "Y": 35.31905,
+            "Z": 301.16724
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact"
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1030838,
+          "Position": {
+            "X": -285.90833,
+            "Y": 40.324036,
+            "Z": 444.41882
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest",
+          "AetheryteShortcut": "Il Mheg - Lydha Lran",
+          "Fly": true
+        }
+      ]
+    }
+  ]
+}

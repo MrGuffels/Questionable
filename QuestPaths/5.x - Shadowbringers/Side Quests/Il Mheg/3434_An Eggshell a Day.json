@@ -1,0 +1,105 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "Clockwise Starr",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1027691,
+          "Position": {
+            "X": 416.80017,
+            "Y": 87.947784,
+            "Z": -751.09485
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest",
+          "DialogueChoices": [
+            {
+              "Type": "List",
+              "Prompt": "TEXT_LUCKZD204_03434_Q1_000_020",
+              "Answer": "TEXT_LUCKZD204_03434_A1_000_022"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "$": "Attempt to avoid Garden Crocota combat",
+          "Position": {
+            "X": 602.7202,
+            "Y": 123.73922,
+            "Z": -860.4524
+          },
+          "TerritoryId": 816,
+          "InteractionType": "None",
+          "StopDistance": 0.25,
+          "Land": true,
+          "Fly": true
+        },
+        {
+          "DataId": 2010721,
+          "Position": {
+            "X": 600.4271,
+            "Y": 111.283936,
+            "Z": -857.8469
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact"
+        },
+        {
+          "DataId": 2010718,
+          "Position": {
+            "X": 620.2639,
+            "Y": 109.147705,
+            "Z": -871.1223
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "Fly": true
+        },
+        {
+          "DataId": 2010719,
+          "Position": {
+            "X": 642.75574,
+            "Y": 109.941284,
+            "Z": -827.4815
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "Fly": true
+        },
+        {
+          "DataId": 2010720,
+          "Position": {
+            "X": 625.4824,
+            "Y": 109.69714,
+            "Z": -824.9485
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact"
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1027691,
+          "Position": {
+            "X": 416.80017,
+            "Y": 87.947784,
+            "Z": -751.09485
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest",
+          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "Fly": true
+        }
+      ]
+    }
+  ]
+}

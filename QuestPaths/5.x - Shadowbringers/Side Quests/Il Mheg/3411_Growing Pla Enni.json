@@ -1,0 +1,82 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "Clockwise Starr",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1027673,
+          "Position": {
+            "X": -106.06549,
+            "Y": 108.39998,
+            "Z": -841.7639
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest"
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "Position": {
+            "X": -639.1647,
+            "Y": 128.91765,
+            "Z": 621.7844
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Combat",
+          "EnemySpawnType": "OverworldEnemies",
+          "KillEnemyDataIds": [10266],
+          "AetheryteShortcut": "Il Mheg - Lydha Lran",
+          "Fly": true
+        },
+        {
+          "Position": {
+            "X": -150.93805,
+            "Y": 13.96408,
+            "Z": 376.68124
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Combat",
+          "EnemySpawnType": "OverworldEnemies",
+          "KillEnemyDataIds": [10269],
+          "Fly": true
+        },
+        {
+          "DataId": 10252,
+          "Position": {
+            "X": -18.120531,
+            "Y": 57.509007,
+            "Z": -125.96332
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Combat",
+          "EnemySpawnType": "OverworldEnemies",
+          "KillEnemyDataIds": [10252],
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1027673,
+          "Position": {
+            "X": -106.06549,
+            "Y": 108.39998,
+            "Z": -841.7639
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest",
+          "StopDistance": 0.25,
+          "AetheryteShortcut": "Il Mheg - Pla Enni",
+          "Fly": true
+        }
+      ]
+    }
+  ]
+}

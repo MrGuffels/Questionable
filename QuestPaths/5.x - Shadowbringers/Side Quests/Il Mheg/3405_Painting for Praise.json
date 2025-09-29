@@ -1,0 +1,136 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "Clockwise Starr",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1030838,
+          "Position": {
+            "X": -285.90833,
+            "Y": 40.324036,
+            "Z": 444.41882
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest",
+          "DialogueChoices": [
+            {
+              "Type": "List",
+              "Prompt": "TEXT_LUCKZC102_03405_Q1_000_000",
+              "Answer": "TEXT_LUCKZC102_03405_A1_000_000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "DataId": 2010365,
+          "Position": {
+            "X": -168.9632,
+            "Y": 27.450928,
+            "Z": 473.10596
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Combat",
+          "EnemySpawnType": "AfterInteraction",
+          "KillEnemyDataIds": [11155],
+          "Fly": true
+        },
+        {
+          "DataId": 2010366,
+          "Position": {
+            "X": -94.010864,
+            "Y": 19.516235,
+            "Z": 473.1975
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Combat",
+          "EnemySpawnType": "AfterInteraction",
+          "KillEnemyDataIds": [11155],
+          "Fly": true
+        },
+        {
+          "DataId": 2010367,
+          "Position": {
+            "X": -99.38208,
+            "Y": 18.051392,
+            "Z": 440.26855
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact"
+        }
+      ]
+    },
+    {
+      "Sequence": 2,
+      "Steps": [
+        {
+          "DataId": 1030838,
+          "Position": {
+            "X": -285.90833,
+            "Y": 40.324036,
+            "Z": 444.41882
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "$": "Stop distance to avoid sacks on ground",
+          "StopDistance": 1.0,
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 3,
+      "Steps": [
+        {
+          "DataId": 1030844,
+          "Position": {
+            "X": -696.7727,
+            "Y": 38.733704,
+            "Z": -28.366577
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 4,
+      "Steps": [
+        {
+          "DataId": 1030838,
+          "Position": {
+            "X": -285.90833,
+            "Y": 40.324036,
+            "Z": 444.41882
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "AetheryteShortcut": "Il Mheg - Lydha Lran",
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1030838,
+          "Position": {
+            "X": -285.90833,
+            "Y": 40.324036,
+            "Z": 444.41882
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest",
+          "NextQuestId": 3406
+        }
+      ]
+    }
+  ]
+}

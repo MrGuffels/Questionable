@@ -1,0 +1,53 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "Clockwise Starr",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1031179,
+          "Position": {
+            "X": 353.84143,
+            "Y": 86.52623,
+            "Z": -691.2795
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest"
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "DataId": 2010715,
+          "Position": {
+            "X": -84.00098,
+            "Y": -86.56445,
+            "Z": -55.86328
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1031179,
+          "Position": {
+            "X": 353.84143,
+            "Y": 86.52623,
+            "Z": -691.2795
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest",
+          "AetheryteShortcut": "Il Mheg - Wolekdorf"
+        }
+      ]
+    }
+  ]
+}

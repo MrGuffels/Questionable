@@ -1,0 +1,61 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "Clockwise Starr",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1027672,
+          "Position": {
+            "X": -101.51831,
+            "Y": 101.86012,
+            "Z": -838.49854
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest"
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "DataId": 1031498,
+          "Position": {
+            "X": 64.34729,
+            "Y": 11.202045,
+            "Z": -543.75525
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "DialogueChoices": [
+            {
+              "Type": "List",
+              "Prompt": "TEXT_LUCKZD011_03418_Q1_000_000",
+              "Answer": "TEXT_LUCKZD011_03418_A1_000_002"
+            }
+          ],
+          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1027672,
+          "Position": {
+            "X": -101.51831,
+            "Y": 101.86012,
+            "Z": -838.49854
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest",
+          "AetheryteShortcut": "Il Mheg - Pla Enni"
+        }
+      ]
+    }
+  ]
+}

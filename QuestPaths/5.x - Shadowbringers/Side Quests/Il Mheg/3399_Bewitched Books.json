@@ -1,0 +1,92 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "Clockwise Starr",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1030618,
+          "Position": {
+            "X": -613.39746,
+            "Y": 36.54754,
+            "Z": -215.41168
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest"
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "DataId": 1031477,
+          "Position": {
+            "X": -626.9475,
+            "Y": 35.86156,
+            "Z": -217.18164
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "DialogueChoices": [
+            {
+              "Prompt": "TEXT_LUCKZC016_03399_Q1_000_000",
+              "Type": "YesNo",
+              "Yes": false
+            }
+          ]
+        },
+        {
+          "DataId": 1031479,
+          "Position": {
+            "X": -652.1249,
+            "Y": 37.361507,
+            "Z": -229.23633
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "DialogueChoices": [
+            {
+              "Prompt": "TEXT_LUCKZC016_03399_Q3_000_000",
+              "Type": "YesNo",
+              "Yes": false
+            }
+          ]
+        },
+        {
+          "DataId": 1031478,
+          "Position": {
+            "X": -630.15186,
+            "Y": 35.86156,
+            "Z": -245.0752
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "DialogueChoices": [
+            {
+              "Prompt": "TEXT_LUCKZC016_03399_Q2_000_000",
+              "Type": "YesNo",
+              "Yes": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1030618,
+          "Position": {
+            "X": -613.39746,
+            "Y": 36.54754,
+            "Z": -215.41168
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest"
+        }
+      ]
+    }
+  ]
+}
