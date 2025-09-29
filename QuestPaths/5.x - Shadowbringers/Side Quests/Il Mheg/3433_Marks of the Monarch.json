@@ -1,0 +1,105 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "Clockwise Starr",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1031500,
+          "Position": {
+            "X": 366.90308,
+            "Y": 86.37964,
+            "Z": -753.2616
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 366.90308,
+                  "Y": 86.37964,
+                  "Z": -753.2616
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "DataId": 2010717,
+          "Position": {
+            "X": 264.8507,
+            "Y": 27.725586,
+            "Z": -41.947144
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Emote",
+          "Emote": "lookout",
+          "Fly": true
+        },
+        {
+          "DataId": 2010716,
+          "Position": {
+            "X": 671.2595,
+            "Y": 107.07251,
+            "Z": -900.8774
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Emote",
+          "Emote": "lookout",
+          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1031500,
+          "Position": {
+            "X": 366.90308,
+            "Y": 86.37964,
+            "Z": -753.2616
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 366.90308,
+                  "Y": 86.37964,
+                  "Z": -753.2616
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          },
+          "DialogueChoices": [
+            {
+              "Type": "List",
+              "Prompt": "TEXT_LUCKZD203_03433_Q1_000_020",
+              "Answer": "TEXT_LUCKZD203_03433_A1_000_021"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

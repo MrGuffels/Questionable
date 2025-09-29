@@ -1,0 +1,141 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "alydev",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1030266,
+          "Position": {
+            "X": -367.66614,
+            "Y": 66.863594,
+            "Z": 557.1526
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Lydha Lran",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": -367.66614,
+                  "Y": 66.863594,
+                  "Z": 557.1526
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "DataId": 1030263,
+          "Position": {
+            "X": -42.815117,
+            "Y": 24.277075,
+            "Z": 742.348
+          },
+          "TerritoryId": 816,
+          "StopDistance": 1,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "CompletionQuestVariablesFlags": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "High": 4
+            }
+          ]
+        },
+        {
+          "DataId": 1030261,
+          "Position": {
+            "X": -40.512756,
+            "Y": 24.160252,
+            "Z": 741.0239
+          },
+          "TerritoryId": 816,
+          "StopDistance": 3,
+          "InteractionType": "Interact",
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 2,
+      "Steps": [
+        {
+          "DataId": 1030270,
+          "Position": {
+            "X": -266.37683,
+            "Y": 50.977943,
+            "Z": 582.69617
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact"
+        }
+      ]
+    },
+    {
+      "Sequence": 3,
+      "Steps": [
+        {
+          "DataId": 2010722,
+          "Position": {
+            "X": -42.313293,
+            "Y": 24.246582,
+            "Z": 742.2445
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Say",
+          "Fly": true,
+          "ChatMessage": {
+            "Key": "TEXT_LUCKZC014_03397_SYSTEM_000_024"
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1030269,
+          "Position": {
+            "X": -364.065,
+            "Y": 67.968376,
+            "Z": 561.24194
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Lydha Lran",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": -364.065,
+                  "Y": 67.968376,
+                  "Z": 561.24194
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

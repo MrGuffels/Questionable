@@ -1,0 +1,92 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "Clockwise Starr",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1027693,
+          "Position": {
+            "X": 364.27856,
+            "Y": 87.001114,
+            "Z": -715.41925
+          },
+          "TerritoryId": 816,
+          "InteractionType": "AcceptQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 364.27856,
+                  "Y": 87.001114,
+                  "Z": -715.41925
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "DataId": 2010699,
+          "Position": {
+            "X": 55.22229,
+            "Y": 0.015197754,
+            "Z": -282.36823
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "DialogueChoices": [
+            {
+              "Type": "YesNo",
+              "Prompt": "TEXT_LUCKZD013_03420_SYSTEM_110_010",
+              "Yes": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1027693,
+          "Position": {
+            "X": 364.27856,
+            "Y": 87.001114,
+            "Z": -715.41925
+          },
+          "TerritoryId": 816,
+          "InteractionType": "CompleteQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 364.27856,
+                  "Y": 87.001114,
+                  "Z": -715.41925
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          },
+          "NextQuestId": 3425
+        }
+      ]
+    }
+  ]
+}
