@@ -8,12 +8,28 @@
         {
           "DataId": 1030274,
           "Position": {
-            "X": -46.12805,
-            "Y": 110.93045,
-            "Z": -851.92645
+            "X": -45.759922,
+            "Y": 110.93033,
+            "Z": -850.55524
           },
           "TerritoryId": 816,
-          "InteractionType": "AcceptQuest"
+          "InteractionType": "AcceptQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Pla Enni",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": -45.759922,
+                  "Y": 110.93033,
+                  "Z": -850.55524
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
         }
       ]
     },
@@ -60,15 +76,28 @@
         {
           "DataId": 1030274,
           "Position": {
-            "X": -46.12805,
-            "Y": 110.93045,
-            "Z": -851.92645
+            "X": -45.759922,
+            "Y": 110.93033,
+            "Z": -850.55524
           },
           "TerritoryId": 816,
           "InteractionType": "CompleteQuest",
           "StopDistance": 0.25,
+          "Fly": true,
           "AetheryteShortcut": "Il Mheg - Pla Enni",
-          "Fly": true
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": -45.759922,
+                  "Y": 110.93033,
+                  "Z": -850.55524
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
         }
       ]
     }

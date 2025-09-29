@@ -13,7 +13,23 @@
             "Z": -838.49854
           },
           "TerritoryId": 816,
-          "InteractionType": "AcceptQuest"
+          "InteractionType": "AcceptQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Pla Enni",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": -101.51831,
+                  "Y": 101.86012,
+                  "Z": -838.49854
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
         }
       ]
     },
@@ -36,7 +52,6 @@
               "Answer": "TEXT_LUCKZD011_03418_A1_000_002"
             }
           ],
-          "AetheryteShortcut": "Il Mheg - Wolekdorf",
           "Fly": true
         }
       ]
@@ -53,7 +68,22 @@
           },
           "TerritoryId": 816,
           "InteractionType": "CompleteQuest",
-          "AetheryteShortcut": "Il Mheg - Pla Enni"
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Pla Enni",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": -101.51831,
+                  "Y": 101.86012,
+                  "Z": -838.49854
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
         }
       ]
     }

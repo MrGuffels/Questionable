@@ -1,29 +1,29 @@
 {
   "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
-  "Author": "Clockwise Starr",
+  "Author": "alydev",
   "QuestSequence": [
     {
       "Sequence": 0,
       "Steps": [
         {
-          "DataId": 1031025,
+          "DataId": 1030266,
           "Position": {
-            "X": -79.75891,
-            "Y": 37.968338,
-            "Z": -531.8532
+            "X": -367.66614,
+            "Y": 66.863594,
+            "Z": 557.1526
           },
           "TerritoryId": 816,
           "InteractionType": "AcceptQuest",
           "StopDistance": 0.25,
           "Fly": true,
-          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "AetheryteShortcut": "Il Mheg - Lydha Lran",
           "SkipConditions": {
             "AetheryteShortcutIf": {
               "NearPosition": {
                 "Position": {
-                  "X": -79.75891,
-                  "Y": 37.968338,
-                  "Z": -531.8532
+                  "X": -367.66614,
+                  "Y": 66.863594,
+                  "Z": 557.1526
                 },
                 "TerritoryId": 816,
                 "MaximumDistance": 200
@@ -37,14 +37,13 @@
       "Sequence": 1,
       "Steps": [
         {
-          "DataId": 1027695,
+          "DataId": 1030268,
           "Position": {
-            "X": 441.64185,
-            "Y": 89.80711,
-            "Z": -653.43713
+            "X": -225.05536,
+            "Y": 45.947155,
+            "Z": 576.8978
           },
           "TerritoryId": 816,
-          "AetheryteShortcut": "Il Mheg - Wolekdorf",
           "InteractionType": "Interact",
           "Fly": true
         }
@@ -54,11 +53,27 @@
       "Sequence": 2,
       "Steps": [
         {
-          "DataId": 1031026,
+          "DataId": 1030261,
           "Position": {
-            "X": 354.69592,
-            "Y": 87.448784,
-            "Z": -711.7876
+            "X": -40.512756,
+            "Y": 24.160252,
+            "Z": 741.0239
+          },
+          "TerritoryId": 816,
+          "InteractionType": "Interact",
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 3,
+      "Steps": [
+        {
+          "DataId": 1030268,
+          "Position": {
+            "X": -225.05536,
+            "Y": 45.947155,
+            "Z": 576.8978
           },
           "TerritoryId": 816,
           "InteractionType": "Interact",
@@ -70,31 +85,30 @@
       "Sequence": 255,
       "Steps": [
         {
-          "DataId": 1031025,
+          "DataId": 1030266,
           "Position": {
-            "X": -79.75891,
-            "Y": 37.968338,
-            "Z": -531.8532
+            "X": -367.66614,
+            "Y": 66.863594,
+            "Z": 557.1526
           },
           "TerritoryId": 816,
           "InteractionType": "CompleteQuest",
           "StopDistance": 0.25,
           "Fly": true,
-          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "AetheryteShortcut": "Il Mheg - Lydha Lran",
           "SkipConditions": {
             "AetheryteShortcutIf": {
               "NearPosition": {
                 "Position": {
-                  "X": -79.75891,
-                  "Y": 37.968338,
-                  "Z": -531.8532
+                  "X": -367.66614,
+                  "Y": 66.863594,
+                  "Z": 557.1526
                 },
                 "TerritoryId": 816,
                 "MaximumDistance": 200
               }
             }
-          },
-          "NextQuestId": 3429
+          }
         }
       ]
     }

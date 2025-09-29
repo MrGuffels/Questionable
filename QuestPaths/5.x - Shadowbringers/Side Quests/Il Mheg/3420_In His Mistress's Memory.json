@@ -13,7 +13,23 @@
             "Z": -715.41925
           },
           "TerritoryId": 816,
-          "InteractionType": "AcceptQuest"
+          "InteractionType": "AcceptQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 364.27856,
+                  "Y": 87.001114,
+                  "Z": -715.41925
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
         }
       ]
     },
@@ -52,7 +68,22 @@
           },
           "TerritoryId": 816,
           "InteractionType": "CompleteQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
           "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 364.27856,
+                  "Y": 87.001114,
+                  "Z": -715.41925
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          },
           "NextQuestId": 3425
         }
       ]

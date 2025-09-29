@@ -13,7 +13,23 @@
             "Z": 498.16125
           },
           "TerritoryId": 816,
-          "InteractionType": "AcceptQuest"
+          "InteractionType": "AcceptQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Lydha Lran",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": -419.30273,
+                  "Y": 60.306217,
+                  "Z": 498.16125
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
         }
       ]
     },
@@ -21,6 +37,7 @@
       "Sequence": 1,
       "Steps": [
         {
+          "$": "Wolekdorf is slightly closer, but not worth TP",
           "DataId": 1031522,
           "Position": {
             "X": 676.2949,
@@ -76,8 +93,7 @@
           },
           "TerritoryId": 816,
           "InteractionType": "Say",
-          "ChatMessage": 
-          {
+          "ChatMessage": {
             "Key": "TEXT_LUCKZD019_03426_SYSTEM_100_020"
           },
           "DisableNavmesh": true
@@ -122,10 +138,22 @@
           },
           "TerritoryId": 816,
           "InteractionType": "CompleteQuest",
-          "$": "Pathing from aetheryte would sometimes give error with default stop distance",
-          "StopDistance": 1.0,
+          "StopDistance": 0.25,
           "Fly": true,
-          "AetheryteShortcut": "Il Mheg - Lydha Lran"
+          "AetheryteShortcut": "Il Mheg - Lydha Lran",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": -419.30273,
+                  "Y": 60.306217,
+                  "Z": 498.16125
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
         }
       ]
     }

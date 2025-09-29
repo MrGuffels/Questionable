@@ -13,7 +13,22 @@
             "Z": -786.3432
           },
           "TerritoryId": 816,
-          "InteractionType": "AcceptQuest"
+          "InteractionType": "AcceptQuest",
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Pla Enni",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": -224.84174,
+                  "Y": 79.61796,
+                  "Z": -786.3432
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 350
+              }
+            }
+          }
         }
       ]
     },
@@ -69,34 +84,15 @@
           "TerritoryId": 816,
           "InteractionType": "Combat",
           "EnemySpawnType": "AfterInteraction",
-          "KillEnemyDataIds": [11112]
+          "KillEnemyDataIds": [
+            11112
+          ]
         }
       ]
     },
     {
       "Sequence": 255,
       "Steps": [
-        {
-          "Position": {
-            "X": -130.83179,
-            "Y": 67.79039,
-            "Z": -679.27563
-          },
-          "TerritoryId": 816,
-          "InteractionType": "None",
-          "Fly": true
-        },
-        {
-          "Position": {
-            "X": -150.98509,
-            "Y": 70.57293,
-            "Z": -718.194
-          },
-          "TerritoryId": 816,
-          "InteractionType": "None",
-          "DisableNavmesh": true,
-          "Fly": true
-        },
         {
           "DataId": 1030698,
           "Position": {
@@ -105,7 +101,22 @@
             "Z": -786.3432
           },
           "TerritoryId": 816,
-          "InteractionType": "CompleteQuest"
+          "InteractionType": "CompleteQuest",
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Pla Enni",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": -224.84174,
+                  "Y": 79.61796,
+                  "Z": -786.3432
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 300
+              }
+            }
+          }
         }
       ]
     }

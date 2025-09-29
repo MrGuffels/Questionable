@@ -13,13 +13,39 @@
             "Z": -691.2795
           },
           "TerritoryId": 816,
-          "InteractionType": "AcceptQuest"
+          "InteractionType": "AcceptQuest",
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 353.84143,
+                  "Y": 86.52623,
+                  "Z": -691.2795
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
         }
       ]
     },
     {
       "Sequence": 1,
       "Steps": [
+        {
+          "Position": {
+            "X": -65.72714,
+            "Y": 1.4000998,
+            "Z": -38.895847
+          },
+          "TerritoryId": 816,
+          "InteractionType": "None",
+          "Fly": true
+        },
         {
           "DataId": 2010715,
           "Position": {
@@ -29,6 +55,8 @@
           },
           "TerritoryId": 816,
           "InteractionType": "Interact",
+          "StopDistance": 0.25,
+          "DisableNavmesh": true,
           "Fly": true
         }
       ]
@@ -45,7 +73,22 @@
           },
           "TerritoryId": 816,
           "InteractionType": "CompleteQuest",
-          "AetheryteShortcut": "Il Mheg - Wolekdorf"
+          "StopDistance": 0.25,
+          "Fly": true,
+          "AetheryteShortcut": "Il Mheg - Wolekdorf",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 353.84143,
+                  "Y": 86.52623,
+                  "Z": -691.2795
+                },
+                "TerritoryId": 816,
+                "MaximumDistance": 200
+              }
+            }
+          }
         }
       ]
     }
