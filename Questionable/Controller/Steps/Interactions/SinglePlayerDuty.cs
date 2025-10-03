@@ -44,6 +44,7 @@ internal static class SinglePlayerDuty
                         out var cfcData))
                     throw new TaskException("Failed to get content finder condition for solo instance");
 
+                yield return new Mount.UnmountTask();
                 yield return new StartSinglePlayerDuty(cfcData.ContentFinderConditionId);
                 yield return new WaitAtStart.WaitDelay(TimeSpan.FromSeconds(2)); // maybe a delay will work here too, needs investigation
                 yield return new EnableAi(cfcData.TerritoryId == SpecialTerritories.Naadam);
