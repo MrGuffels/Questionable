@@ -35,54 +35,57 @@ internal static class SinglePlayerDuty
     {
         public IEnumerable<ITask> CreateAllTasks(Quest quest, QuestSequence sequence, QuestStep step)
         {
-            if (step.InteractionType != EInteractionType.SinglePlayerDuty || bossModIpc.IsConfiguredToRunSoloInstance(quest.Id, step.SinglePlayerDutyOptions))
+            if (step.InteractionType != EInteractionType.SinglePlayerDuty)
                 yield break;
 
-            yield return new Mount.UnmountTask();
-            if (!territoryData.TryGetContentFinderConditionForSoloInstance(quest.Id, step.SinglePlayerDutyIndex,
-                    out var cfcData))
-                throw new TaskException("Failed to get content finder condition for solo instance");
+            if (bossModIpc.IsConfiguredToRunSoloInstance(quest.Id, step.SinglePlayerDutyOptions))
+            {
+                if (!territoryData.TryGetContentFinderConditionForSoloInstance(quest.Id, step.SinglePlayerDutyIndex,
+                        out var cfcData))
+                    throw new TaskException("Failed to get content finder condition for solo instance");
 
-            yield return new StartSinglePlayerDuty(cfcData.ContentFinderConditionId);
-            yield return new WaitAtStart.WaitDelay(TimeSpan.FromSeconds(2)); // maybe a delay will work here too, needs investigation
-            yield return new EnableAi(cfcData.TerritoryId == SpecialTerritories.Naadam);
-            if (cfcData.TerritoryId == SpecialTerritories.Lahabrea)
-            {
-                yield return new SetTarget(14643);
-                yield return new WaitCondition.Task(
-                    () => condition[ConditionFlag.Unconscious] || clientState.TerritoryType != SpecialTerritories.Lahabrea,
-                    "Wait(death)");
-                yield return new DisableAi();
-                yield return new WaitCondition.Task(
-                    () => !condition[ConditionFlag.Unconscious] || clientState.TerritoryType != SpecialTerritories.Lahabrea,
-                    "Wait(resurrection)");
-                yield return new EnableAi();
-            }
-            else if (cfcData.TerritoryId is SpecialTerritories.ItsProbablyATrap)
-            {
-                yield return new WaitCondition.Task(() => DutyActionsAvailable() || clientState.TerritoryType != SpecialTerritories.ItsProbablyATrap,
-                    "Wait(Phase 2)");
-                yield return new EnableAi(true);
-            }
-            else if (cfcData.TerritoryId is SpecialTerritories.Naadam)
-            {
-                yield return new WaitCondition.Task(
-                    () =>
-                    {
-                        if (clientState.TerritoryType != SpecialTerritories.Naadam)
-                            return true;
-
-                        var pos = clientState.LocalPlayer?.Position ?? default;
-                        return (new Vector3(352.01f, -1.45f, 288.59f) - pos).Length() < 10f;
-                    },
-                    "Wait(moving to Ovoo)");
                 yield return new Mount.UnmountTask();
-                yield return new EnableAi();
-            }
+                yield return new StartSinglePlayerDuty(cfcData.ContentFinderConditionId);
+                yield return new WaitAtStart.WaitDelay(TimeSpan.FromSeconds(2)); // maybe a delay will work here too, needs investigation
+                yield return new EnableAi(cfcData.TerritoryId == SpecialTerritories.Naadam);
+                if (cfcData.TerritoryId == SpecialTerritories.Lahabrea)
+                {
+                    yield return new SetTarget(14643);
+                    yield return new WaitCondition.Task(
+                        () => condition[ConditionFlag.Unconscious] || clientState.TerritoryType != SpecialTerritories.Lahabrea,
+                        "Wait(death)");
+                    yield return new DisableAi();
+                    yield return new WaitCondition.Task(
+                        () => !condition[ConditionFlag.Unconscious] || clientState.TerritoryType != SpecialTerritories.Lahabrea,
+                        "Wait(resurrection)");
+                    yield return new EnableAi();
+                }
+                else if (cfcData.TerritoryId is SpecialTerritories.ItsProbablyATrap)
+                {
+                    yield return new WaitCondition.Task(() => DutyActionsAvailable() || clientState.TerritoryType != SpecialTerritories.ItsProbablyATrap,
+                        "Wait(Phase 2)");
+                    yield return new EnableAi(true);
+                }
+                else if (cfcData.TerritoryId is SpecialTerritories.Naadam)
+                {
+                    yield return new WaitCondition.Task(
+                        () =>
+                        {
+                            if (clientState.TerritoryType != SpecialTerritories.Naadam)
+                                return true;
 
-            yield return new WaitSinglePlayerDuty(cfcData.ContentFinderConditionId);
-            yield return new DisableAi();
-            yield return new WaitAtEnd.WaitNextStepOrSequence();
+                            var pos = clientState.LocalPlayer?.Position ?? default;
+                            return (new Vector3(352.01f, -1.45f, 288.59f) - pos).Length() < 10f;
+                        },
+                        "Wait(moving to Ovoo)");
+                    yield return new Mount.UnmountTask();
+                    yield return new EnableAi();
+                }
+
+                yield return new WaitSinglePlayerDuty(cfcData.ContentFinderConditionId);
+                yield return new DisableAi();
+                yield return new WaitAtEnd.WaitNextStepOrSequence();
+            }
         }
 
         private unsafe bool DutyActionsAvailable()
