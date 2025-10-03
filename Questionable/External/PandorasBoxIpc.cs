@@ -22,6 +22,8 @@ internal sealed class PandorasBoxIpc : IDisposable
         "Auto-Mount after Gathering",
         "Auto-Peleton",
         "Auto-Spring in Sanctuaries",
+        "Auto-select Turn-ins",
+        "Auto-Sync FATEs",
 
         // Targets
         "Auto-interact with Gathering Nodes",
