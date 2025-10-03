@@ -24,13 +24,14 @@
         {
           "DataId": 1026253,
           "Position": {
-            "X": 650.87354,
+            "X": 648.91284,
             "Y": 70,
-            "Z": 546.89856
+            "Z": 546.08887
           },
           "TerritoryId": 621,
           "InteractionType": "Interact",
           "Fly": true,
+          "Land": true,
           "AetheryteShortcut": "Lochs - Ala Mhigan Quarter"
         }
       ]

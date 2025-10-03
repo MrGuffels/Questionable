@@ -56,6 +56,10 @@ public abstract class ElementId : IComparable<ElementId>, IEquatable<ElementId>
             return new SatisfactionSupplyNpcId(ushort.Parse(value.Substring(1), CultureInfo.InvariantCulture));
         else if (value.StartsWith("U"))
             return new UnlockLinkId(ushort.Parse(value.Substring(1), CultureInfo.InvariantCulture));
+        else if (value.StartsWith("N"))
+            return new AethernetId(ushort.Parse(value.Substring(1), CultureInfo.InvariantCulture));
+        else if (value.StartsWith("C"))
+            return new AetherCurrentId(ushort.Parse(value.Substring(1), CultureInfo.InvariantCulture));
         else if (value.StartsWith("A"))
         {
             value = value.Substring(1);
@@ -113,6 +117,22 @@ public sealed class UnlockLinkId(ushort value) : ElementId(value)
     public override string ToString()
     {
         return "U" + Value.ToString(CultureInfo.InvariantCulture);
+    }
+}
+
+public sealed class AethernetId(ushort value) : ElementId(value)
+{
+    public override string ToString()
+    {
+        return "N" + Value.ToString(CultureInfo.InvariantCulture);
+    }
+}
+
+public sealed class AetherCurrentId(ushort value) : ElementId(value)
+{
+    public override string ToString()
+    {
+        return "C" + Value.ToString(CultureInfo.InvariantCulture);
     }
 }
 

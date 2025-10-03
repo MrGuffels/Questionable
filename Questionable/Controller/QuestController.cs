@@ -294,13 +294,11 @@ internal sealed class QuestController : MiniTaskController<QuestController>
             !IsRunning ||
             CurrentQuest == null ||
             !_clientState.IsLoggedIn ||
-            _clientState.LocalPlayer == null)
+            _clientState.LocalPlayer == null ||
+            DateTime.Now < _lastAutoRefresh.AddSeconds(5))
         {
             return;
         }
-
-        if (DateTime.Now < _lastAutoRefresh.AddSeconds(5))
-            return;
 
         if (_condition[ConditionFlag.InCombat] ||
             _condition[ConditionFlag.Unconscious] ||
