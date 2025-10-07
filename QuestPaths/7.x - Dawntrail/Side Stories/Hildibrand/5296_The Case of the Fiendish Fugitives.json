@@ -119,6 +119,7 @@
                     },
                     "TerritoryId": 1186,
                     "InteractionType": "CompleteQuest",
+                    "NextQuestId": 5378,
                     "AetheryteShortcut": "Solution Nine",
                     "AethernetShortcut": [
                         "[Solution Nine] Aetheryte Plaza",
