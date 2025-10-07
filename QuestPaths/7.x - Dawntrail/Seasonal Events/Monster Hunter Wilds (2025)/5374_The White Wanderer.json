@@ -1,0 +1,408 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "alydev",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1054465,
+          "Position": {
+            "X": 0.165078,
+            "Y": -14,
+            "Z": 106.233
+          },
+          "TerritoryId": 1185,
+          "InteractionType": "AcceptQuest",
+          "StopDistance": 3,
+          "AethernetShortcut": [
+            "[Tuliyollal] Aetheryte Plaza",
+            "[Tuliyollal] Bayside Bevy Marketplace"
+          ],
+          "AetheryteShortcut": "Tuliyollal",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 0.165078,
+                  "Y": -14,
+                  "Z": 106.233
+                },
+                "TerritoryId": 1185,
+                "MaximumDistance": 50
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "DataId": 2014821,
+          "Position": {
+            "X": 342.03088,
+            "Y": -1.3275757,
+            "Z": 438.4984
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "AetheryteShortcut": "Shaaloani - Hhusatahwi",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 2,
+      "Steps": [
+        {
+          "DataId": 1054466,
+          "Position": {
+            "X": 420.37073,
+            "Y": -0.65818214,
+            "Z": 390.67664
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "StopDistance": 4,
+          "AetheryteShortcut": "Shaaloani - Hhusatahwi",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 3,
+      "Steps": [
+        {
+          "DataId": 1054466,
+          "Position": {
+            "X": 420.37073,
+            "Y": -0.65818214,
+            "Z": 390.67664
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "StopDistance": 4,
+          "AetheryteShortcut": "Shaaloani - Hhusatahwi",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            },
+            "StepIf": {
+              "NotNamePlateIconId": [
+                71346
+              ]
+            }
+          }
+        },
+        {
+          "DataId": 2014823,
+          "Position": {
+            "X": 478.96545,
+            "Y": 4.7455444,
+            "Z": 237.53711
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 4,
+      "Steps": [
+        {
+          "DataId": 1054466,
+          "Position": {
+            "X": 420.37073,
+            "Y": -0.65818214,
+            "Z": 390.67664
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "StopDistance": 4,
+          "AetheryteShortcut": "Shaaloani - Hhusatahwi",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            },
+            "StepIf": {
+              "NotNamePlateIconId": [
+                71346
+              ]
+            }
+          }
+        },
+        {
+          "DataId": 2014824,
+          "Position": {
+            "X": 349.813,
+            "Y": 7.1869507,
+            "Z": 220.78271
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true
+        }
+      ]
+    },
+    {
+      "Sequence": 5,
+      "Steps": [
+        {
+          "DataId": 1054466,
+          "Position": {
+            "X": 420.37073,
+            "Y": -0.65818214,
+            "Z": 390.67664
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "StopDistance": 4,
+          "AetheryteShortcut": "Shaaloani - Hhusatahwi",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            },
+            "StepIf": {
+              "NotNamePlateIconId": [
+                71346
+              ]
+            }
+          }
+        },
+        {
+          "DataId": 2014822,
+          "Position": {
+            "X": 402.42603,
+            "Y": -11.276428,
+            "Z": 40.604248
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "StopDistance": 4
+        }
+      ]
+    },
+    {
+      "Sequence": 6,
+      "Steps": [
+        {
+          "DataId": 1054467,
+          "Position": {
+            "X": 254.38306,
+            "Y": -7.9001174,
+            "Z": 465.17126
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "StopDistance": 4,
+          "AetheryteShortcut": "Shaaloani - Hhusatahwi",
+          "DialogueChoices": [
+            {
+              "Prompt": "TEXT_KINGYX901_05374_SYSTEM_000_301",
+              "Type": "YesNo",
+              "Yes": true
+            }
+          ],
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 7,
+      "Steps": [
+        {
+          "DataId": 1054469,
+          "Position": {
+            "X": -215.04541,
+            "Y": 45.13145,
+            "Z": -756.89325
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "StopDistance": 3,
+          "AetheryteShortcut": "Shaaloani - Mehwahhetsoan",
+          "DialogueChoices": [
+            {
+              "Prompt": "TEXT_KINGYX901_05374_SYSTEM_200_402",
+              "Type": "YesNo",
+              "Yes": true
+            }
+          ],
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 8
+    },
+    {
+      "Sequence": 9,
+      "Steps": [
+        {
+          "DataId": 1054469,
+          "Position": {
+            "X": -215.04541,
+            "Y": 45.13145,
+            "Z": -756.89325
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "StopDistance": 3,
+          "AetheryteShortcut": "Shaaloani - Mehwahhetsoan",
+          "TargetTerritoryId": 1301,
+          "DialogueChoices": [
+            {
+              "Prompt": "TEXT_KINGYX901_05374_SYSTEM_000_410",
+              "Type": "YesNo",
+              "Yes": true
+            }
+          ],
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InTerritory": [
+                1301
+              ]
+            },
+            "StepIf": {
+              "InTerritory": [
+                1301
+              ]
+            }
+          }
+        },
+        {
+          "DataId": 1054471,
+          "Position": {
+            "X": 23.056335,
+            "Y": 101,
+            "Z": 733.7604
+          },
+          "TerritoryId": 1301,
+          "InteractionType": "Interact"
+        }
+      ]
+    },
+    {
+      "Sequence": 10,
+      "Steps": [
+        {
+          "DataId": 1054469,
+          "Position": {
+            "X": -215.04541,
+            "Y": 45.13145,
+            "Z": -756.89325
+          },
+          "TerritoryId": 1190,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "StopDistance": 3,
+          "AetheryteShortcut": "Shaaloani - Mehwahhetsoan",
+          "TargetTerritoryId": 1301,
+          "DialogueChoices": [
+            {
+              "Prompt": "TEXT_KINGYX901_05374_SYSTEM_000_410",
+              "Type": "YesNo",
+              "Yes": true
+            }
+          ],
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InTerritory": [
+                1301
+              ]
+            },
+            "StepIf": {
+              "InTerritory": [
+                1301
+              ]
+            }
+          }
+        },
+        {
+          "DataId": 1054471,
+          "Position": {
+            "X": 23.056335,
+            "Y": 101,
+            "Z": 733.7604
+          },
+          "TerritoryId": 1301,
+          "InteractionType": "Interact"
+        }
+      ]
+    },
+    {
+      "Sequence": 11,
+      "Steps": [
+        {
+          "TerritoryId": 1301,
+          "InteractionType": "Duty",
+          "DutyOptions": {
+            "ContentFinderConditionId": 1043,
+            "Enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1054465,
+          "Position": {
+            "X": 0.165078,
+            "Y": -14,
+            "Z": 106.233
+          },
+          "TerritoryId": 1185,
+          "InteractionType": "CompleteQuest",
+          "StopDistance": 3,
+          "AethernetShortcut": [
+            "[Tuliyollal] Aetheryte Plaza",
+            "[Tuliyollal] Bayside Bevy Marketplace"
+          ],
+          "AetheryteShortcut": "Tuliyollal",
+          "SkipConditions": {
+            "StepIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 0.165078,
+                  "Y": -14,
+                  "Z": 106.233
+                },
+                "TerritoryId": 1185,
+                "MaximumDistance": 50
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
