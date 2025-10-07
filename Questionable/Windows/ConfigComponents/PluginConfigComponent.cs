@@ -136,6 +136,14 @@ internal sealed class PluginConfigComponent : ConfigComponent
                 """,
                 new Uri("https://github.com/NightmareXIV/NotificationMaster"),
                 null),
+            new("Artisan",
+                "Artisan",
+                """
+                Automates crafting
+                """,
+                new Uri("https://github.com/PunishXIV/Artisan"),
+                new Uri("https://puni.sh/api/plugins"),
+                "/artisan"),
         ];
     }
 

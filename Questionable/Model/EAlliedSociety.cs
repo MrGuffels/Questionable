@@ -27,4 +27,5 @@ public enum EAlliedSociety : byte
     Loporrits = 17,
     Pelupelu = 18,
     MamoolJa = 19,
+    YokHuy = 20,
 }

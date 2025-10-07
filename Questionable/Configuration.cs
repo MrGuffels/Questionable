@@ -42,7 +42,7 @@ internal sealed class Configuration : IPluginConfiguration
         public bool SkipLowPriorityDuties { get; set; }
         public bool ConfigureTextAdvance { get; set; } = true;
         public bool AutoStepRefreshEnabled { get; set; } = true;
-        public int AutoStepRefreshDelaySeconds { get; set; } = 10;
+        public int AutoStepRefreshDelaySeconds { get; set; } = 30;
     }
 
     internal sealed class StopConfiguration

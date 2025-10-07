@@ -30,7 +30,8 @@ internal sealed class AlliedSocietyDailyInfo : IQuestInfo
             EAlliedSociety.Ixal or
                 EAlliedSociety.Moogles or
                 EAlliedSociety.Dwarves or
-                EAlliedSociety.Loporrits =>
+                EAlliedSociety.Loporrits or
+                EAlliedSociety.YokHuy =>
                 classJobUtils.AsIndividualJobs(EExtendedClassJob.DoH, null).ToList(),
 
             EAlliedSociety.Qitari or
