@@ -1,0 +1,108 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "alydev,Kiarra",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1054635,
+          "Position": {
+            "X": 493.2173,
+            "Y": 142.24991,
+            "Z": 783.0471
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "AcceptQuest",
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 493.2173,
+                  "Y": 142.24991,
+                  "Z": 783.0471
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 200
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "Position": {
+            "X": 500.93835,
+            "Y": 142.24991,
+            "Z": 782.22314
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "WalkTo",
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            },
+            "StepIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 500.93835,
+                  "Y": 142.24991,
+                  "Z": 782.22314
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 200
+              }
+            }
+          }
+        },
+        {
+          "DataId": 1055818,
+          "Position": {
+            "X": 583.276,
+            "Y": 120.7841,
+            "Z": 382.55884
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "Interact"
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1054635,
+          "Position": {
+            "X": 493.2173,
+            "Y": 142.24991,
+            "Z": 783.0471
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "CompleteQuest",
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 493.2173,
+                  "Y": 142.24991,
+                  "Z": 783.0471
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 200
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
