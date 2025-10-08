@@ -70,7 +70,6 @@
           }
         },
         {
-          "$": "Recovery",
           "DataId": 1054640,
           "Position": {
             "X": 496.11658,
@@ -113,26 +112,16 @@
           "DisableNavmesh": true
         },
         {
-          "$": "Doorway",
+          "$": "Xarhorkur",
+          "DataId": 1055802,
           "Position": {
-            "X": 85.997314,
-            "Y": 3.3723085,
-            "Z": 66.514145
+            "X": 74.75391,
+            "Y": 1.8866259,
+            "Z": 50.369995
           },
           "TerritoryId": 1297,
-          "InteractionType": "WalkTo",
-          "Mount": true,
+          "InteractionType": "Interact",
           "DisableNavmesh": true
-        },
-        {
-          "DataId": 1055821,
-          "Position": {
-            "X": 88.97534,
-            "Y": 3.3723087,
-            "Z": 75.791504
-          },
-          "TerritoryId": 1297,
-          "InteractionType": "Interact"
         }
       ]
     },
@@ -231,7 +220,7 @@
         {
           "TerritoryId": 1297,
           "InteractionType": "Craft",
-          "ItemId": 46216,
+          "ItemId": 46214,
           "ItemCount": 3,
           "SkipConditions": {
             "StepIf": {
@@ -249,7 +238,9 @@
             "Z": 75.791504
           },
           "TerritoryId": 1297,
-          "InteractionType": "Interact"
+          "InteractionType": "Interact",
+          "Mount": true,
+          "DisableNavmesh": true
         }
       ]
     },

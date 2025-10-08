@@ -36,6 +36,7 @@
       "Sequence": 1,
       "Steps": [
         {
+          "$": "Recovery",
           "Position": {
             "X": 496.11658,
             "Y": 142.24991,
@@ -87,6 +88,7 @@
           }
         },
         {
+          "$": "Road",
           "Position": {
             "X": 16.57459,
             "Y": 0.29999995,
@@ -98,6 +100,7 @@
           "DisableNavmesh": true
         },
         {
+          "$": "Ledge",
           "Position": {
             "X": 68.103134,
             "Y": 1.8905401,
@@ -109,6 +112,7 @@
           "DisableNavmesh": true
         },
         {
+          "$": "Xarhorkur",
           "DataId": 1055802,
           "Position": {
             "X": 74.75391,
@@ -125,6 +129,7 @@
       "Sequence": 2,
       "Steps": [
         {
+          "$": "Recovery",
           "Position": {
             "X": 496.11658,
             "Y": 142.24991,
@@ -158,6 +163,7 @@
           }
         },
         {
+          "$": "Recovery",
           "DataId": 1054640,
           "Position": {
             "X": 496.11658,
@@ -176,6 +182,43 @@
           }
         },
         {
+          "$": "Road",
+          "Position": {
+            "X": 16.57459,
+            "Y": 0.29999995,
+            "Z": 62.71482
+          },
+          "TerritoryId": 1297,
+          "InteractionType": "WalkTo",
+          "Mount": true,
+          "DisableNavmesh": true
+        },
+        {
+          "$": "Ledge",
+          "Position": {
+            "X": 68.103134,
+            "Y": 1.8905401,
+            "Z": 64.664055
+          },
+          "TerritoryId": 1297,
+          "InteractionType": "WalkTo",
+          "Mount": true,
+          "DisableNavmesh": true
+        },
+        {
+          "$": "Right corner",
+          "Position": {
+            "X": 71.806465,
+            "Y": 1.8905365,
+            "Z": 96.004585
+          },
+          "TerritoryId": 1297,
+          "InteractionType": "WalkTo",
+          "Mount": true,
+          "DisableNavmesh": true
+        },
+        {
+          "$": "Craft",
           "TerritoryId": 1297,
           "InteractionType": "Craft",
           "ItemId": 46208,
@@ -189,17 +232,7 @@
           }
         },
         {
-          "Position": {
-            "X": 71.806465,
-            "Y": 1.8905365,
-            "Z": 96.004585
-          },
-          "TerritoryId": 1297,
-          "InteractionType": "WalkTo",
-          "Mount": true,
-          "DisableNavmesh": true
-        },
-        {
+          "$": "Quest NPC",
           "DataId": 1055816,
           "Position": {
             "X": 98.924194,

@@ -36,6 +36,7 @@
       "Sequence": 1,
       "Steps": [
         {
+          "$": "Recovery",
           "Position": {
             "X": 500.93835,
             "Y": 142.24991,
