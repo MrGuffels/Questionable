@@ -74,10 +74,9 @@ jobs:
         id: check-release
         run: |
           FORCE_RELEASE="${{ github.event.inputs.force_release }}"
-          TESTING="${{ steps.is-testing.outputs.testing }}"
           TAG_EXISTS="${{ steps.check-tag.outputs.exists }}"
           
-          if [ "$FORCE_RELEASE" = "true" ] || [ "$TESTING" = "true" ] || [ "$TAG_EXISTS" = "false" ]; then
+          if [ "$FORCE_RELEASE" = "true" ] || [ "$TAG_EXISTS" = "false" ]; then
             echo "should-release=true" >> $GITHUB_OUTPUT
             echo "Will create release"
           else
@@ -158,7 +157,7 @@ jobs:
         run: |
           PREVIOUS_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
           if [ -n "$PREVIOUS_TAG" ]; then
-            CHANGELOG=$(git log --pretty=format:"- %s (%h) by %an" ${PREVIOUS_TAG}..HEAD --no-merges | grep -v "Version bump")
+            CHANGELOG=$(git log --pretty=format:"- %s (%h) by %an" ${PREVIOUS_TAG}..HEAD --no-merges | grep -v "Version bump" | grep -v "Merge branch")
             COMMIT_COUNT=$(git rev-list --count ${PREVIOUS_TAG}..HEAD --no-merges)
             echo "Found $COMMIT_COUNT commits since $PREVIOUS_TAG"
           else
