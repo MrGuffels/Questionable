@@ -1,6 +1,10 @@
 {
   "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
   "Author": "liza",
+  "LastChecked": {
+    "Username": "alydev",
+    "Date": "2025-10-09"
+  },
   "QuestSequence": [
     {
       "Sequence": 0,
@@ -31,38 +35,81 @@
       "Sequence": 1,
       "Steps": [
         {
+          "InteractionType": "None",
+          "TerritoryId": 1188,
+          "AetheryteShortcut": "Kozama'uka - Ok'hanu",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 219.98926,
+                  "Y": 10.289447,
+                  "Z": -522.9115
+                },
+                "TerritoryId": 1188,
+                "MaximumDistance": 200
+              }
+            }
+          }
+        },
+        {
           "DataId": 1052301,
           "Position": {
-            "X": 219.98926,
-            "Y": 10.289447,
-            "Z": -522.9115
+            "X": 218.94374,
+            "Y": 13.147079,
+            "Z": -523.25415
           },
           "TerritoryId": 1188,
           "InteractionType": "Interact",
-          "AetheryteShortcut": "Kozama'uka - Ok'hanu",
-          "Fly": true
+          "StopDistance": 2,
+          "Fly": true,
+          "Land": true,
+          "CompletionQuestVariablesFlags": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "High": 4
+            }
+          ]
         },
         {
           "DataId": 1052300,
           "Position": {
-            "X": 208.48401,
-            "Y": 10.257622,
-            "Z": -588.98303
+            "X": 208.64929,
+            "Y": 19.334402,
+            "Z": -588.99615
           },
           "TerritoryId": 1188,
           "InteractionType": "Interact",
-          "Fly": true
+          "StopDistance": 2,
+          "Fly": true,
+          "Land": true,
+          "CompletionQuestVariablesFlags": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "High": 8
+            }
+          ]
         },
         {
           "DataId": 1052302,
           "Position": {
             "X": 171.03833,
-            "Y": 7.17552,
+            "Y": 10.17552,
             "Z": -602.6246
           },
           "TerritoryId": 1188,
           "InteractionType": "Interact",
-          "Fly": true
+          "StopDistance": 2,
+          "Fly": true,
+          "Land": true
         }
       ]
     },
