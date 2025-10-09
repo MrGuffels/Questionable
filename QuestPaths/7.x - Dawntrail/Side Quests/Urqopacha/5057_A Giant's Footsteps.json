@@ -21,7 +21,22 @@
               "Prompt": "TEXT_KINGZB303_05057_Q1_000_000",
               "Answer": "TEXT_KINGZB303_05057_A1_000_001"
             }
-          ]
+          ],
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Wachunpelo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 425.07043,
+                  "Y": 118.935005,
+                  "Z": 606.13403
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 150
+              }
+            }
+          }
         }
       ]
     },
@@ -37,7 +52,13 @@
           },
           "TerritoryId": 1187,
           "InteractionType": "Interact",
-          "Fly": true
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            }
+          }
         }
       ]
     },
@@ -45,15 +66,26 @@
       "Sequence": 2,
       "Steps": [
         {
+          "InteractionType": "None",
+          "TerritoryId": 1187,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            }
+          }
+        },
+        {
           "DataId": 17653,
           "Position": {
-            "X": 215.6255,
-            "Y": 24.677507,
-            "Z": 182.81274
+            "X": 218.81328,
+            "Y": 24.800442,
+            "Z": 184.70943
           },
           "TerritoryId": 1187,
           "InteractionType": "WaitForNpcAtPosition",
           "NpcWaitDistance": 6,
+          "StopDistance": 0.25,
           "Mount": false,
           "Sprint": false
         },
@@ -67,6 +99,7 @@
           "TerritoryId": 1187,
           "InteractionType": "WaitForNpcAtPosition",
           "NpcWaitDistance": 6,
+          "StopDistance": 0.25,
           "Mount": false,
           "Sprint": false
         },
@@ -80,6 +113,7 @@
           "TerritoryId": 1187,
           "InteractionType": "WaitForNpcAtPosition",
           "NpcWaitDistance": 6,
+          "StopDistance": 0.25,
           "Mount": false,
           "Sprint": false
         },
@@ -123,6 +157,7 @@
           "TerritoryId": 1187,
           "InteractionType": "WaitForNpcAtPosition",
           "NpcWaitDistance": 6.5,
+          "StopDistance": 0.25,
           "Mount": false,
           "Sprint": false
         },
@@ -135,7 +170,8 @@
           },
           "TerritoryId": 1187,
           "InteractionType": "WaitForNpcAtPosition",
-          "NpcWaitDistance": 6.5,
+          "NpcWaitDistance": 6,
+          "StopDistance": 0.25,
           "Mount": false,
           "Sprint": false
         },
@@ -163,7 +199,14 @@
           },
           "StopDistance": 5,
           "TerritoryId": 1187,
-          "InteractionType": "Interact"
+          "InteractionType": "Interact",
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            }
+          }
         }
       ]
     },
@@ -180,7 +223,21 @@
           "StopDistance": 5,
           "TerritoryId": 1187,
           "InteractionType": "CompleteQuest",
+          "Fly": true,
           "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 425.07043,
+                  "Y": 118.935005,
+                  "Z": 606.13403
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 150
+              }
+            }
+          },
           "NextQuestId": 5058
         }
       ]

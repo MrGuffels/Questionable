@@ -1,0 +1,145 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "alydev,stoat33",
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1054635,
+          "Position": {
+            "X": 493.2173,
+            "Y": 142.24991,
+            "Z": 783.0471
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "AcceptQuest",
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 493.2173,
+                  "Y": 142.24991,
+                  "Z": 783.0471
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 200
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "$": "Recovery",
+          "Position": {
+            "X": 254.56616,
+            "Y": 34.20388,
+            "Z": 156.60327
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "WalkTo",
+          "StopDistance": 2,
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "StepIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 254.56616,
+                  "Y": 34.20388,
+                  "Z": 156.60327
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 20
+              }
+            }
+          }
+        },
+        {
+          "DataId": 1055825,
+          "Position": {
+            "X": 254.56616,
+            "Y": 34.20388,
+            "Z": 156.60327
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "Say",
+          "Fly": true,
+          "ChatMessage": {
+            "Key": "TEXT_BANYOK114_05349_SAYTODO_000_010"
+          }
+        },
+        {
+          "DataId": 1055826,
+          "Position": {
+            "X": 145.76941,
+            "Y": 34.203403,
+            "Z": 101.548706
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "Say",
+          "Fly": true,
+          "ChatMessage": {
+            "Key": "TEXT_BANYOK114_05349_SAYTODO_000_010"
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "Position": {
+            "X": 493.2173,
+            "Y": 142.24991,
+            "Z": 783.0471
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "WalkTo",
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "Fly": true,
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 493.2173,
+                  "Y": 142.24991,
+                  "Z": 783.0471
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 200
+              }
+            },
+            "StepIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 493.2173,
+                  "Y": 142.24991,
+                  "Z": 783.0471
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 50
+              }
+            }
+          }
+        },
+        {
+          "DataId": 1054635,
+          "Position": {
+            "X": 493.2173,
+            "Y": 142.24991,
+            "Z": 783.0471
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "CompleteQuest"
+        }
+      ]
+    }
+  ]
+}
