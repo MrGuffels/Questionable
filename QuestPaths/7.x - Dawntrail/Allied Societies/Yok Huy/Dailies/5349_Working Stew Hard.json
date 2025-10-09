@@ -1,6 +1,6 @@
 {
   "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
-  "Author": "alydev,Kiarra",
+  "Author": "alydev,stoat33",
   "QuestSequence": [
     {
       "Sequence": 0,
@@ -38,59 +38,62 @@
         {
           "$": "Recovery",
           "Position": {
-            "X": 500.93835,
-            "Y": 142.24991,
-            "Z": 782.22314
+            "X": 254.56616,
+            "Y": 34.20388,
+            "Z": 156.60327
           },
           "TerritoryId": 1187,
           "InteractionType": "WalkTo",
+          "StopDistance": 2,
           "Fly": true,
           "AetheryteShortcut": "Urqopacha - Worlar's Echo",
           "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "InSameTerritory": true
-            },
             "StepIf": {
               "NearPosition": {
                 "Position": {
-                  "X": 500.93835,
-                  "Y": 142.24991,
-                  "Z": 782.22314
+                  "X": 254.56616,
+                  "Y": 34.20388,
+                  "Z": 156.60327
                 },
                 "TerritoryId": 1187,
-                "MaximumDistance": 200
+                "MaximumDistance": 20
               }
             }
           }
         },
         {
-          "DataId": 1054676,
+          "DataId": 1055825,
           "Position": {
-            "X": 500.93835,
-            "Y": 142.24991,
-            "Z": 782.22314
+            "X": 254.56616,
+            "Y": 34.20388,
+            "Z": 156.60327
           },
           "TerritoryId": 1187,
-          "InteractionType": "Interact"
+          "InteractionType": "Say",
+          "Fly": true,
+          "ChatMessage": {
+            "Key": "TEXT_BANYOK114_05349_SAYTODO_000_010"
+          }
+        },
+        {
+          "DataId": 1055826,
+          "Position": {
+            "X": 145.76941,
+            "Y": 34.203403,
+            "Z": 101.548706
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "Say",
+          "Fly": true,
+          "ChatMessage": {
+            "Key": "TEXT_BANYOK114_05349_SAYTODO_000_010"
+          }
         }
       ]
     },
     {
       "Sequence": 255,
       "Steps": [
-        {
-          "InteractionType": "Craft",
-          "TerritoryId": 1187,
-          "ItemId": 46210,
-          "ItemCount": 2,
-          "SkipConditions": {
-            "StepIf": {
-              "Item": {
-                "NotInInventory": false
-              }
-            }
-          }
-        },
         {
           "Position": {
             "X": 493.2173,
