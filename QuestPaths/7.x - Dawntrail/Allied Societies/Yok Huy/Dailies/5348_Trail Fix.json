@@ -1,6 +1,6 @@
 {
   "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
-  "Author": "alydev,Kiarra",
+  "Author": "alydev,stoat33",
   "QuestSequence": [
     {
       "Sequence": 0,
@@ -81,8 +81,8 @@
         {
           "InteractionType": "Craft",
           "TerritoryId": 1187,
-          "ItemId": 46210,
-          "ItemCount": 2,
+          "ItemId": 46226,
+          "ItemCount": 1,
           "SkipConditions": {
             "StepIf": {
               "Item": {
