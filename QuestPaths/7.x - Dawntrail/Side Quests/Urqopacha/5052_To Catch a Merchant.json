@@ -13,22 +13,7 @@
             "Z": -420.49292
           },
           "TerritoryId": 1187,
-          "InteractionType": "AcceptQuest",
-          "Fly": true,
-          "AetheryteShortcut": "Urqopacha - Wachunpelo",
-          "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "NearPosition": {
-                "Position": {
-                  "X": 383.29138,
-                  "Y": -154.50243,
-                  "Z": -420.49292
-                },
-                "TerritoryId": 1187,
-                "MaximumDistance": 150
-              }
-            }
-          }
+          "InteractionType": "AcceptQuest"
         }
       ]
     },
@@ -44,13 +29,7 @@
           },
           "TerritoryId": 1187,
           "InteractionType": "Interact",
-          "Fly": true,
-          "AetheryteShortcut": "Urqopacha - Wachunpelo",
-          "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "InSameTerritory": true
-            }
-          }
+          "Fly": true
         }
       ]
     },
@@ -66,13 +45,7 @@
           },
           "TerritoryId": 1187,
           "InteractionType": "Interact",
-          "Fly": true,
-          "AetheryteShortcut": "Urqopacha - Wachunpelo",
-          "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "InSameTerritory": true
-            }
-          }
+          "Fly": true
         }
       ]
     },
@@ -87,14 +60,7 @@
             "Z": 37.00305
           },
           "TerritoryId": 1187,
-          "InteractionType": "Interact",
-          "Fly": true,
-          "AetheryteShortcut": "Urqopacha - Wachunpelo",
-          "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "InSameTerritory": true
-            }
-          }
+          "InteractionType": "Interact"
         }
       ]
     },
@@ -110,21 +76,8 @@
           },
           "TerritoryId": 1187,
           "InteractionType": "CompleteQuest",
-          "Fly": true,
           "AetheryteShortcut": "Urqopacha - Wachunpelo",
-          "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "NearPosition": {
-                "Position": {
-                  "X": 383.29138,
-                  "Y": -154.50243,
-                  "Z": -420.49292
-                },
-                "TerritoryId": 1187,
-                "MaximumDistance": 150
-              }
-            }
-          },
+          "Fly": true,
           "NextQuestId": 5053
         }
       ]

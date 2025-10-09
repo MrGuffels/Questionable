@@ -13,22 +13,7 @@
             "Z": -420.49292
           },
           "TerritoryId": 1187,
-          "InteractionType": "AcceptQuest",
-          "Fly": true,
-          "AetheryteShortcut": "Urqopacha - Wachunpelo",
-          "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "NearPosition": {
-                "Position": {
-                  "X": 383.29138,
-                  "Y": -154.50243,
-                  "Z": -420.49292
-                },
-                "TerritoryId": 1187,
-                "MaximumDistance": 150
-              }
-            }
-          }
+          "InteractionType": "AcceptQuest"
         }
       ]
     },
@@ -44,13 +29,7 @@
           },
           "TerritoryId": 1187,
           "InteractionType": "Interact",
-          "Fly": true,
-          "AetheryteShortcut": "Urqopacha - Wachunpelo",
-          "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "InSameTerritory": true
-            }
-          }
+          "Fly": true
         }
       ]
     },
@@ -73,14 +52,7 @@
               "Prompt": "TEXT_KINGZB204_05054_Q1_000_000",
               "Yes": true
             }
-          ],
-          "Fly": true,
-          "AetheryteShortcut": "Urqopacha - Wachunpelo",
-          "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "InSameTerritory": true
-            }
-          }
+          ]
         }
       ]
     },
@@ -96,14 +68,7 @@
           },
           "StopDistance": 5,
           "TerritoryId": 1187,
-          "InteractionType": "Interact",
-          "Fly": true,
-          "AetheryteShortcut": "Urqopacha - Wachunpelo",
-          "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "InSameTerritory": true
-            }
-          }
+          "InteractionType": "Interact"
         }
       ]
     },
@@ -119,21 +84,7 @@
           },
           "TerritoryId": 1187,
           "InteractionType": "CompleteQuest",
-          "Fly": true,
-          "AetheryteShortcut": "Urqopacha - Wachunpelo",
-          "SkipConditions": {
-            "AetheryteShortcutIf": {
-              "NearPosition": {
-                "Position": {
-                  "X": 383.29138,
-                  "Y": -154.50243,
-                  "Z": -420.49292
-                },
-                "TerritoryId": 1187,
-                "MaximumDistance": 150
-              }
-            }
-          }
+          "AetheryteShortcut": "Urqopacha - Wachunpelo"
         }
       ]
     }
